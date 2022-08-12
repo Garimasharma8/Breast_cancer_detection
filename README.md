@@ -45,4 +45,17 @@ The classification report is:
 
 
 # Approach B: Classifing using Random forest:
+We have implemented logistic regression on the same dataset and get an accuracy rate of 90%. Now let’s see if random forests will provide us better accuracy or not. 
+
+Steps to model the random forest are shown below: 
+1. Import libraries: pandas, numpy, and sklearn.
+2. Getting features (X) and target (Y) from the dataset, in the dataset the last column is target columns, where 0: no breast cancer and 1: breast cancer diagnosed. 
+3. Use train_test_split to split the dataset into training and testing se. We have used 30% of data as test set. 
+4. Create a random forest with 5 DT and these tree trained themselves as per gini index. We can also use entropy as the criterion. Train the model on the scaled training set. 
+5. Once the model is trained, we can predict the outcomes on scaled test data. 
+6. Generate classification report
+
+The output of the random forest classifier is:
+
+![image](https://user-images.githubusercontent.com/97305078/184278451-b39824de-c96f-4832-99c3-d650ccd9ecce.png)
 
